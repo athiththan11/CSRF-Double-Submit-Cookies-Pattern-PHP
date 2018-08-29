@@ -85,7 +85,7 @@
         </div>
     </div>
 
-    <!-- CSRF Token retrieve | ajax call to the service.php -->
+    <!-- CSRF Token retrieve | from cookie storage -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
 
