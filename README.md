@@ -2,7 +2,7 @@
 
 A sample implementation of CSRF Double Submit Cookies Pattern in PHP.
 
-[live demo](https://csrf-dscp.herokuapp.com) [![Heroku](https://heroku-badge.herokuapp.com/?app=heroku-badge)]
+[live demo](https://csrf-dscp.herokuapp.com)
 
 ## How to
 
