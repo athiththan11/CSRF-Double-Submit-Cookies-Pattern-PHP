@@ -52,11 +52,11 @@
 						<form class="mt-5 mb-3" action="login.php" method="POST">
 							<div class="form-group">
 								<label for="username">Username</label>
-								<input type="text" class="form-control" id="username" name="username" required autofocus/>
+								<input type="text" class="form-control" id="username" name="username" value="csrf" required autofocus/>
 							</div>
 							<div class="form-group">
 								<label for="password">Password</label>
-								<input type="password" class="form-control" id="password" name="password" required/>
+								<input type="password" class="form-control" id="password" name="password" value="token" required/>
 							</div>
 							<button type="submit" class="btn btn-primary btn-block mt-5" name="login">Login</button>
 						</form>
@@ -72,18 +72,37 @@
 				<h4>CSRF Double Submit Cookies Pattern</h4>
 				<hr class="my-4">
 				<p>
-					This is a sample PHP application implemented to explain the <b>Cross Site Request Forgery (CSRF) - <i>Double Submit Cookies Pattern
+					This is a sample PHP application implemented to explain the <b>Cross Site Request Forgery (CSRF) - <i>Double Submit
+							Cookies Pattern
 						</i></b>.<br/><br/>You can use the following credentials to login to the system.
 				</p>
 				<ul>
 					<li><span>Username: csrf</span></li>
 					<li><span>Password: token</span></li>
 				</ul>
+				<br/>
+				<a class="disabled" href="https://github.com/athiththan11/csrf-double-submit-cookies-pattern-php"><i data-feather="github"></i>
+					Github Repo</a>
+				<br/><br/>
+				<small>Check out CSRF Synchronizer Token Pattern implementation on PHP in
+					<ul class="list-inline">
+						<li class="list-inline-item">
+							<a class="disabled" href="https://github.com/athiththan11/csrf-double-submit-cookies-pattern-php">Github</a>
+						</li>
+						<li class="list-inline-item">
+							<a class="disabled" href="https://github.com/athiththan11/csrf-double-submit-cookies-pattern-php">Heroku</a>
+						</li>
+					</ul>
+				</small>
 			</div>
 			<!-- End Description block -->
 
 		</div>
 	</div>
+
+	<script>
+		feather.replace()
+	</script>
 
 </body>
 

@@ -89,7 +89,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
 
-        function appendToken() {
+        function extractToken() {
 
             var cookieName = "csrf_token_cookie=";
             var decodedCookies = decodeURIComponent(document.cookie);
@@ -109,9 +109,17 @@
                     token = cookie.substring(cookieName.length, cookie.length);
                 }
             }
-
-            document.getElementById("csrf_token").value = token;
+            
+            return token;
         }
+
+        function appendToken() {
+            document.getElementById("csrf_token").value = extractToken();
+        }
+
+        $(document).ready(function() {
+            $("#csrf_token_string").text(extractToken());
+        })
         
     </script>
 
