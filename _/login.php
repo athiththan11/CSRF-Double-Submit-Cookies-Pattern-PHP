@@ -31,7 +31,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Login - CSRF DSCP</title>
+	<title>CSRF Double Submit Cookies Pattern | Login</title>
 
 	<?php include (realpath(__DIR__)."/addons/header.php") ?>
 
