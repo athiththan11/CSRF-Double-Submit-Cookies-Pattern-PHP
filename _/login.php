@@ -71,10 +71,13 @@
 			<div class="col-md-6 mx-auto my-5 order-1">
 				<h4>CSRF Double Submit Cookies Pattern</h4>
 				<hr class="my-4">
-				<p>
-					This is a sample PHP application implemented to explain the <b>Cross Site Request Forgery (CSRF) - <i>Double Submit
+				<p class="lead text-justify">
+					This is a sample PHP application implemented to explain the <b>Cross Site Request Forgery (CSRF) - Double Submit
 							Cookies Pattern
-						</i></b>.<br/><br/>You can use the following credentials to login to the system.
+					</b>.
+				</p>
+				<p>
+					You can use the following credentials to login and demo with the system
 				</p>
 				<ul>
 					<li><span>Username: csrf</span></li>
@@ -87,10 +90,10 @@
 				<small>Check out CSRF Synchronizer Token Pattern implementation on PHP in
 					<ul class="list-inline">
 						<li class="list-inline-item">
-							<a class="disabled" href="https://github.com/athiththan11/csrf-double-submit-cookies-pattern-php">Github</a>
+							<a class="disabled" href="https://github.com/athiththan11/csrf-synchronizer-token-pattern-php">Github</a>
 						</li>
 						<li class="list-inline-item">
-							<a class="disabled" href="https://github.com/athiththan11/csrf-double-submit-cookies-pattern-php">Heroku</a>
+							<a class="disabled" href="https://csrf-dscp.herokuapp.com">Heroku</a>
 						</li>
 					</ul>
 				</small>
