@@ -43,7 +43,7 @@
 		<div class="row">
 
 			<!-- Sign in block -->
-			<div class="col-md-4 mx-auto order-12">
+			<div class="col-md-4 mx-auto order-12 align-self-center">
 				<div class="card my-5 p-3 shadow">
 					<div class="card-body">
 						<h5 class="card-title text-center">Sign In</h5>
@@ -68,12 +68,12 @@
 			<!-- End Sign in block -->
 
 			<!-- Description block -->
-			<div class="col-md-6 mx-auto my-5 order-1">
+			<div class="col-md-6 mx-auto my-5 order-1 align-self-center">
 				<h4>CSRF Double Submit Cookies Pattern</h4>
 				<hr class="my-4">
 				<p class="lead text-justify">
-					This is a sample PHP application implemented to explain the <b>Cross Site Request Forgery (CSRF) - Double Submit
-							Cookies Pattern
+					This is a sample PHP application implemented to explain the <b>Cross Site Request Forgery (CSRF) - Double Submit Cookies
+						Pattern
 					</b>.
 				</p>
 				<p>
