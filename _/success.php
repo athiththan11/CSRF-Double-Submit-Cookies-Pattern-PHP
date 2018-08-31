@@ -10,7 +10,27 @@
 
 <body>
 
-    Success
+    <ul class="nav justify-content-center mt-3">
+        <li class="nav-item">
+            <a class="btn btn-link" href="/index.php">Home</a>
+        </li>
+    </ul>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-5 mt-5 mx-auto p-5">
+                <p class="lead text-center text-success">
+                    <b>Success</b>
+                </p>
+                <p class="text-center">
+                    The provided csrf token and the cookie stored token are same. So, this is meant to be a secured transaction of data to the
+                    end-points.
+                </p>
+            </div>
+
+        </div>
+    </div>
 
 </body>
 
