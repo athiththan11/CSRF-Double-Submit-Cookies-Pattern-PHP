@@ -110,7 +110,7 @@
                         <p class="text-secondary text-justify">
                             When performing a POST or a form submission, front-end scripts (JavaScript) are tailored to extract the stored CSRF token
                             cookie from the cookie storage and to append the csrf token into a hidden input field which is
-                            placed inside on the form. <br/><br/>The following code snippet represents
+                            placed in the form. <br/><br/>The following code snippet represents
                             the hidden input field.
                         </p>
                         <p class="lead text-center">
@@ -121,6 +121,11 @@
                             The following image shows the snippet of the form provided above, including the hidden field with a custom text value for
                             csrf token.
                         </p>
+                        <br/>
+                        <a class="text-muted disabled" href="https://github.com/athiththan11/csrf-double-submit-cookies-pattern-php" target="_blank">
+                            <i data-feather="github"></i>
+					        Github Repo
+                        </a>
                     </div>
 
                     <div class="col-md-6 mx-auto align-self-center">
