@@ -12,6 +12,8 @@
         // unset all cookies and sessions belongs to that user
         unset($_COOKIE['csrf_session_cookie']);
         setcookie('csrf_session_cookie', null, -1, '/');
+        unset($_COOKIE['csrf_token_cookie']);
+        setcookie('csrf_token_cookie', null, -1, '/');
         unset($_SESSION);
 
         // redirect to login page
