@@ -25,7 +25,7 @@
      *
      * @return void
      */
-    function generateCSRFToken($session, $length = 10) {
+    function generateCSRFToken($session, $length = 32) {
 
         $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
         $charactersLength = strlen($characters);
@@ -43,14 +43,6 @@
     if(isset($_POST['logout'])){
 
         logout();
-
-    } elseif (isset($_POST['csrf_request'])){
-
-        if($_POST['csrf_request'] == $_COOKIE['csrf_session_cookie']){
-            echo generateCSRFToken($_COOKIE['csrf_session_cookie']);
-        }else {
-            echo "nullstring";
-        }
 
     } else if (isset($_POST['verify'])){
 
