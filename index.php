@@ -174,6 +174,7 @@
             $("#csrf_token_string").text(extractToken());
         })
 
+        feather.replace();
     </script>
 
 </body>
