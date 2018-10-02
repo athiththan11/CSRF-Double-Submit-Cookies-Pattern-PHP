@@ -46,6 +46,7 @@
 
     } else if (isset($_POST['verify'])){
 
+        // verify the csrf tokens
         if($_POST['csrf_token'] == $_COOKIE['csrf_token_cookie']){
             header("location: ./../../_/success.php");
         }else {

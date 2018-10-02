@@ -47,7 +47,7 @@
                         <hr class="my-4">
 
                         <!-- csrf form -->
-                        <form class="mt-3 mb-3" action="/src/service.php" method="POST" onSubmit="appendToken()">
+                        <form class="mt-3 mb-3" action="/src/service.php" method="POST">
 
                             <!-- csrf hidden input field -->
                             <input type="hidden" id="csrf_token" name="csrf_token" value="csrf" />
@@ -142,6 +142,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
 
+        // function to extract generated CSRF token from stored cookie
         function extractToken() {
 
             var cookieName = "csrf_token_cookie=";
@@ -166,12 +167,14 @@
             return token;
         }
 
+        // append function to append the CSRF token to a hidden field
         function appendToken() {
             document.getElementById("csrf_token").value = extractToken();
         }
 
         $(document).ready(function () {
             $("#csrf_token_string").text(extractToken());
+            appendToken();
         })
 
         feather.replace();

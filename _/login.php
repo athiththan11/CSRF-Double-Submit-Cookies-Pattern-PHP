@@ -9,13 +9,18 @@
 
         if(($username == "csrf") && ($password == "token")){
 
+			// set a session variable
 			$_SESSION['csrf_session'] = "csrfdscpsamplephp";
 
+			// regenerate an id for session and store in a cookie
 			session_regenerate_id();
 			setcookie("csrf_session_cookie", session_id(), (time() + (56400)), "/");
 			
+			// include service.php to generate csrf token
 			include(realpath(__DIR__)."/../src/service.php");
 			$csrf_token = generateCSRFToken(session_id());
+
+			// set a cookie with the generated csrf token
 			setcookie("csrf_token_cookie", $csrf_token, (time() + 300), '/');
 
             header("location: ./../../index.php");
